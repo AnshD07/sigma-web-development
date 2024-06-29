@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+        } 
+
+        /* if we need to make varible this is varible like made in html. this called Global Varible  */
+        
+        :root{
+            --color:rgb(220, 48, 200);
+            --secondcolor:rgb(166, 166, 225);
+            --defpad:25px;
+            --defopacity:0.4;
+        }
+        
+        /* Var() use to call the varible here and make it happen and also we not need to change color so many place */
+        
+        .nav{
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--secondcolor);
+        }
+
+        ul{
+            display: flex;
+
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            border: 5px solid var(--secondcolor);
+
+            opacity: var(--defopacity);
+        }
+
+        ul li:first-child{
+            --color:rgb(246, 59, 118);
+            background-color: var(--color,blue);/* If varible is Not Found  */
+        }
+
+        /* Now this is Local Variable  */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+         
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime non ipsum nemo nesciunt sint dolorum beatae eos atque sapiente possimus accusamus soluta esse nobis facere id, laboriosam perferendis sequi reiciendis, quidem necessitatibus aut, laborum ex!
+        
+    </div>
+</body>
+
+</html>

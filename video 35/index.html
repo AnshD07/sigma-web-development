@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selector</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line {
+            color: blueviolet;
+            background-color: black;
+        } */
+
+        /* .boxes *{
+            background-color: brown;
+            border: 2px solid black;
+        } */
+        /*THis is one type of Universal selector in Particular element*/
+
+        /* Attribute Selector */
+        
+        /* [data-we="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: red;
+        } */
+
+        /* .box:nth-last-child(2){
+            background-color: greenyellow;
+        } */
+
+
+        /* Pseudo Elements */
+
+        .boxes::before{
+            content: "Ansh Can do it every day";
+        }
+
+        .boxes::after{
+            content: "Do it For Family";
+        }
+
+         .box::selection{
+            color: blue;
+            background-color: black;
+        }
+
+        .box::first-letter{
+            font-size: 34px;
+            color: red;
+        }
+
+        input::placeholder{
+            color: red;
+            font-size: 23px;
+        }
+
+        /* With this We can target any Html Tag of Element */
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-we="primary" class="box">I am First Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+
+        <input type="text" placeholder="Enter Here your Name">
+    </div>
+</body>
+
+</html>

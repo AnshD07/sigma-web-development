@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tag</title>
+</head>
+<body>
+    <h2>Fill up the Form</h2>
+    <form action="/submit">   
+         <div>
+            <label for="username">Enter your username  :</label>
+            <input type="text" id="username" placeholder="Enter your name">
+        </div>
+        
+        <div>
+            <label for="password">Enter Your password : </label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+       
+
+        <!-- Here radio button we shall make name same for radio button in this html form -->
+
+        <div>
+            <label>Gender :</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other</label>
+        </div>
+         
+        <div>
+            <label for="comment">Address : </label>
+            <textarea name="comment" id="comment" cols="30" rows="2">Enter your Address here.......</textarea>
+        </div>
+        
+        
+        <div>
+            <label>Select Your City : </label>
+            <select name="city" id="city">
+                <option value="Amreli">Amreli</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Vadodra">Vadodra</option>
+            </select>
+             
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Accept terms and condition</label>
+        </div>
+         
+
+        <div>
+            <input type="submit">
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.main {
+    background-image: url(assets/image/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav img {
+    height: 40px;
+    color: red;
+
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.main2 {
+    height: calc(100% - 70px);
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    ;
+    text-align: center;
+}
+
+.main2 h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.main2 h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main2 h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main2 .inp {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 21px;
+    font-size: 20px;
+    border-radius: 4px;
+
+}
+
+.main2 .inp input {
+
+    background-color: rgba(23, 23, 23, 0.3);
+    padding: 20px 80px 10px 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+.sepration {
+    background-color: #232323;
+    height: 10px;
+    width: 100%;
+}
+
+.secpart {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    height: minmax(80vh, 100vh);
+
+}
+
+.secpart .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secpart .content h1 {
+    font-size: 48px;
+}
+
+.secpart .content span {
+    font-size: 24px;
+}
+
+.tv {
+    position: relative;
+    top: 0;
+}
+
+.tv img {
+    position: relative;
+    z-index: 1;
+
+}
+
+.tv video {
+    position: absolute;
+    right: 80px;
+    bottom: 120px;
+}
+
+@media screen and (max-width:1000px) {
+    .secpart {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tv video {
+        position: absolute;
+        left: 80px;
+        bottom: 120px;
+    }
+
+    .thirdpart {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+.thirdpart {
+    color: white;
+    display: flex;
+    height: minmax(80vh, 100vh);
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+
+.thirdpart .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.thirdpart .cont :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.thirdpart .cont :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.thirdpart .box {
+    border: 2px solid #5A5A5A;
+    border-radius: 15px;
+}
+
+.mobile {
+    position: relative;
+
+}
+
+.thirdpart .mobile .box {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    gap: 20px;
+
+
+    position: relative;
+    z-index: 1;
+    bottom: 147px;
+    left: 157px;
+}
+
+.text :nth-child(1) {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text :nth-child(2) {
+    color: blue;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthpart {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.fourthpart .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 60px 0;
+}
+
+.fourthpart .cont :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fourthpart .cont :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rajma {
+    position: relative;
+}
+
+.rajma video {
+    z-index: -1;
+    position: absolute;
+    bottom: 195px;
+    right: 110px;
+    width: 323px;
+}
+
+.fifthpart {
+    margin: 25px 10px;
+    color: white;
+    display: flex;
+    height: minmax(80vh, 100vh);
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    flex-wrap: wrap;    
+}
+
+.fifthpart .cont :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fifthpart .cont :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.fifthpart .cont {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.faqbox:hover{
+    background-color: #e40000;
+    width: 80vw;
+}
+
+.faqbox {
+    transition: all 1s ease-out;    
+    cursor: pointer;
+    display: flex;
+    background-color: #2F2F2F;
+    padding: 24px;
+    justify-content: space-between;
+    width: 70vw;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.faqbox span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cont {
+    margin-top: 40px;
+}
+
+.faq .cont {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faq .inp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faq .inp input {
+    background-color: black;
+    color: white;
+    padding: 20px 80px 10px 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer {
+    margin: 30px 130px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    font-weight: 100;
+}
+
+.call {
+    grid-column: 1/5;
+    padding: 30px 0 10px 0;
+}
+
+.boo {
+    grid-column: 3/5;
+}
+
+.last {
+    grid-column: 1/2;
+}
+
+.footer button{
+    width: 130px;
+    padding: 10px 0 ;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .footer{
+        grid-template-columns: 100px 100px; 
+    }
+}

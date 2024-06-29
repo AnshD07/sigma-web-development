@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+
+        .container {
+            width: 50vw;
+            height: 80vh;
+            background-color: bisque;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+
+
+            /* animation: AnshNuAnimation;
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(1, 0.69, 0.42, 0.97);
+            animation-iteration-count: infinite;
+            animation-delay: 1s;  
+            animation-direction: alternate-reverse;
+            animation-play-state:   running; 
+            
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            
+            */
+
+            animation: AnshNuAnimation 3s ease 1s infinite alternate-reverse both,
+                       Ansh2 3s ease-in-out 1s   ;
+        }
+
+        @keyframes AnshNuAnimation {
+            from {
+                background-color: blue;
+            }
+
+            to {
+                background-color: red;
+                transform: rotate(360deg) scale(2); 
+            }
+        }
+
+        @keyframes Ansh2 {
+            0% {
+                transform: translate(100px);
+            }
+
+            20% {
+
+                transform: translate(150px);
+            }
+
+            40% {
+                transform: translate(200px);
+
+            }
+
+            60% {
+                transform: translate(250px);
+
+            }
+
+            80% {
+                transform: translate(300px);
+            }
+
+            100% {
+                transform: translate(350px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1> Box</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Property</title>
+    <style>
+        body {}
+
+        .container {
+            display: flex;
+            border: 4px solid red;
+            height: 80vh;  
+            
+            /*justify-content:  flex-start;*/      /* justify flex item along the main axis (x-axis remeber)*/
+            
+            align-items: center;        /* align flex item along the Cross axis(Y-axis for remeber)  only for One line*/
+
+            /* flex-direction: column; */
+
+            flex-wrap: wrap;   /* lipat jayega overflow nhi hoga Sameti levu*/
+
+            align-content:  flex-start;   /* More than one line align in cross Axis */
+
+            /* There is no Justify-items in Flexbox */
+
+            /* flex-flow: row wrap; */
+
+
+            gap: 30px;
+            row-gap: 20px;
+            column-gap: 10px;
+            gap: 20px 10px;
+         }
+
+        .item {
+            width: 92px;
+            height: 92px;
+            background-color: blueviolet;
+            
+            border: 2px solid black;
+           
+           
+            /* flex-grow: 1;     */               /* All Element in flex box take equl Width  */
+            
+        }
+ 
+        .item-2{
+            /* flex-grow: 2;    */                /* It take width of two box */
+
+            flex-shrink: 2;   /* We we small the page it shrink like half value */
+
+
+            align-self: flex-end;
+        }
+        .order-1 {
+            order: 1;    /* Lesser order value come forward  */
+        }                /* Higher order Value Go Behind At Flex-end */
+
+        .order-2 {
+            order: 20;
+
+        }
+
+        .order-3 {
+            order: 3; 
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1">
+                <h1>1</h1>
+            </div>
+            <div class="item order-2">
+                <h1>2</h1>
+            </div>
+            <div class="item order-3">
+                <h1>3</h1>
+            </div>
+            <div class="item item-2">
+                <h1>4</h1>
+            </div>
+            <div class="item">5</div>
+            <div class="item"></div> 
+            <div class="item"></div>
+            <div class="item order-1"><h2>66</h2></div>
+            <div class="item"></div> 
+        </div>
+    </main>
+</body>
+
+</html>

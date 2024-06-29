@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;   /*Css think like developer is fool so css add automatic css property like margin padding so we need to reset it*/
+        }
+        
+        
+        .box{
+            background-color: aqua;
+        }
+
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 5px solid red;
+            height: 200px;
+        }
+
+        .box2{
+            color: blueviolet;
+            padding: 10px;
+            margin: 25px;
+            border: 5px solid red;
+            height: 200px;
+            box-sizing: border-box; /*Here box-sizing: border-box; shaw that sab luch milake height 200 px honi chahiye you can ispect the page and go on computed and check the status*/  
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am a second Box</div>
+</body>
+</html>
+
+<!-- this is colapse of boix in this medium  -->

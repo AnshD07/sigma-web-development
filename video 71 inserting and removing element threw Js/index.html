@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting and removing element</title>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" data-cretatedby="ansh" data-designby="raj">Hey i am first box</div>
+        <div class="box" style=" color: green;">Hey i am second box</div>
+    </div>
+
+
+    <script>
+
+        // document.querySelector(".container").innerHTML
+
+        // document.querySelector(".container").outerHTML
+
+        // document.querySelector(".container").innerText ="I am Ansh Dholakiya"
+
+        // document.querySelector(".container").innerText ="I am Ansh Dholakiya"
+
+        // document.getElementsByClassName("box")[1].hasAttribute("style")
+
+        // document.getElementsByClassName("box")[1].getAttribute("style")
+
+        // document.getElementsByClassName("box")[1].setAttribute("style","background-color: green")
+
+        // document.getElementsByClassName("box")[1].removeAttribute("style")
+
+        // document.getElementsByClassName("box")[0].dataset
+
+
+        // let div = document.createElement("div");
+        // div.className = "Created";
+        // div.innerHTML = "Hi This is created <b>By Ansh</b>"
+        // document.querySelector(".container").replaceWith(div)
+
+        // document.querySelector(".container").append(div)
+        // document.querySelector(".container").prepend(div)
+        // document.querySelector(".container").after(div)
+        // document.querySelector(".container").before(div)
+
+        // document.append(div)
+
+
+        // let container = document.querySelector(".container");
+        // container.insertAdjacentHTML("afterbegin","<b>Hey I am insert threw insertAdjacentHtml </b>")
+
+        /*here have beforebegin,afterend, afterbegin explore youe self*/
+
+        // let cont = document.querySelector(".container");
+        // cont.insertAdjacentText("afterend","Hello this is insertAdjacentText :)")
+
+
+        let temp = document.createElement("div")
+        temp.innerHTML = "This is Temp text"
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentElement("afterbegin", temp)
+
+
+
+            
+        // document.querySelector(".container").classList
+        // document.querySelector(".container").className
+        // document.querySelector(".container").classList.toggle("red")
+    </script>
+</body>
+
+</html>

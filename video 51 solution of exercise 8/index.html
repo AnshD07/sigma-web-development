@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution of Exercise 8</title>
+    <style>
+        .container{
+            position: relative;
+            width: 99vw;
+            height: 100vh;
+            background-color:rgb(0, 0, 0);
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(242, 242, 242);
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+
+            /* animation: axisX 3s 1s linear infinite; */
+            /* animation: axisY 1s 1s linear infinite alternate; */
+
+            animation: axisX 3s 1s linear infinite,
+                     axisY 1s 1s ease-out infinite alternate;
+        }
+
+        @keyframes axisX {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes axisY {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="ball">
+        </div>
+    </div>
+</body>
+
+</html>

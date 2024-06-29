@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 1305px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .ball {
+            width: 70px;
+            height: 70px;
+            background-color: blueviolet;
+            border-radius: 100%; 
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+            animation: X-axis 7s ease-in 1s infinite;
+        }
+
+        @keyframes X-axis {
+            0% {
+                height: 70px;
+                width: 70px;
+
+            }
+
+            9% {
+                width: 120px;
+                height: 20px;
+                transform: translate3d(100px, 280px, 0); 
+            }
+
+            18% {
+                transform: translate3d(260px, 50px, 0px);
+                width: 70px;
+                height: 80px;
+            }
+
+            26% {
+                transform: translate3d(390px, 270px, 0);
+                width: 110px;
+                height: 30px;
+            }
+
+            36% {
+                transform: translate3d(500px, 80px, 0px);
+                width: 70px;
+                height: 80px;
+            }
+
+            45% {
+                transform: translate3d(650px, 260px, 0);
+                width: 100px;
+                height: 40px;
+            }
+
+            56% {
+                transform: translate3d(770px, 110px, 0px);
+                width: 70px;
+                height: 80px;
+            }
+
+            63% {
+                transform: translate3d(880px, 250px, 0);
+                width: 90px;
+                height: 50px;
+            }
+
+            72% {
+                transform: translate3d(990px, 140px, 0px);
+                width: 80px;
+                height: 70px;
+                
+            }
+
+            81% {
+                transform: translate3d(1130px, 240px, 0);
+                width: 80px;
+                height: 60px;
+            }
+
+            90% {
+                transform: translate3d(1245px, 170px, 0px);
+                width: 65px;
+                height: 110px;
+            }
+            100% {
+                transform: translate3d(1100px, 250px, 0px);
+                width: 90px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball">
+            <audio src=""></audio>
+        </div>
+    </div>
+</body>
+
+</html>

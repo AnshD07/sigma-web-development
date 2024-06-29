@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 12</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Given 5 Boxes .Assign a random Color and random background to each box using DOM Concept
+     -->
+    <div class="container">
+        <div class="box">
+            <h1>Box 1 </h1>
+        </div>
+        <div class="box">
+            <h1>Box 2 </h1>
+        </div>
+        <div class="box">
+            <h1>Box 3 </h1>
+        </div>
+        <div class="box">
+            <h1>Box 4 </h1>
+        </div>
+        <div class="box">
+            <h1>Box 5 </h1>
+        </div>
+    </div>
+    <script>
+        let rand2 = Math.round(Math.random() * (4 - 0) + 0);
+        let rand3 = Math.round(Math.random() * (4 - 0) + 0);
+        let rand4 = Math.round(Math.random() * (4 - 0) + 0);
+        let rand5 = Math.round(Math.random() * (4 - 0) + 0);
+        let rand6 = Math.round(Math.random() * (4 - 0) + 0);
+
+        document.getElementsByClassName("box")[rand6].style.backgroundColor = "red";
+        document.getElementsByClassName("box")[rand2].style.backgroundColor = "green";
+        document.getElementsByClassName("box")[rand3].style.backgroundColor = "yellow";
+        document.getElementsByClassName("box")[rand4].style.backgroundColor = "purple";
+        document.getElementsByClassName("box")[rand5].style.backgroundColor = "black";
+    </script>
+</body>
+
+</html>

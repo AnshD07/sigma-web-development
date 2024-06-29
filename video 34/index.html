@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and clear</title>
+    <style>
+        img{
+            float: right;
+        }
+
+        .cards{
+            border: 2px solid black; 
+            display: flow-root;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+
+            /* it say that krupa karke mujhe apne right me koi float hota huwa nhi chahiye agar koi float ho rha hai to use hta lo */
+
+            /* if we write both insted of right it say that both side is my please get out left and right side float item */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3YhA6cTFrLn0a21Edpr6B_AYOC3HiQQgUTrS_4w8Aw&s" alt="">
+        <div class="card">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam veritatis, nemo debitis soluta pariatur non est cupiditate porro deleniti adipisci minima unde fugit natus placeat, accusantium corrupti nulla quos, quod animi rem ratione recusandae?</p>
+        </div>
+        <div class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quaerat laborum, dolorem suscipit dicta vitae molestias amet fuga sint error hic et enim ipsa, repellat totam modi natus! Ratione enim aperiam, repudiandae repellat inventore similique laudantium sequi porro. Quasi ducimus sed molestiae eaque non deleniti, deserunt illo totam vel magni? Expedita dolore, reiciendis eum totam vel possimus aspernatur maiores tempora rem repellat odio quia iusto nihil illum dolorem quidem voluptatem recusandae error impedit? Animi perspiciatis dicta eum. Atque enim eius sapiente. Laboriosam quas quidem eaque vel assumenda eum magnam aspernatur sit tempora iure. Itaque explicabo nemo totam fugit incidunt accusantium laboriosam veniam unde natus, quis, ea suscipit aliquam perspiciatis debitis harum expedita temporibus enim. Optio corporis, dicta tenetur et ex doloremque ducimus qui ab vero reprehenderit nobis. Cumque illum laboriosam vitae nobis. At eligendi architecto commodi, perspiciatis quod id, iste numquam illum dicta vitae tempore beatae aliquam dolor. Maiores aspernatur iusto possimus, suscipit veritatis eum at quis quod aut delectus minima, quasi voluptates reprehenderit voluptas ducimus amet doloremque aliquid molestias exercitationem dolorem. Quae labore, veniam ipsum voluptate eligendi, facilis aliquam nobis nam blanditiis explicabo ipsa in perferendis minus debitis magnam commodi aliquid totam laborum reiciendis accusantium. Maiores autem atque hic quaerat harum nulla, ipsum, magnam eligendi ad similique porro, error blanditiis provident nesciunt eos eaque dolorem iusto quia enim ut molestias? Deserunt quis modi, omnis inventore ipsum nemo hic, perspiciatis voluptatibus ipsa, molestias rerum nesciunt dolore nihil eaque debitis sit odio! Tempore explicabo nihil at, voluptatem nostrum commodi, recusandae laborum, sed neque fugiat maxime id assumenda sunt reprehenderit expedita architecto saepe harum magni. Qui dicta officiis iusto dolorum nemo voluptates neque officia iure sapiente, adipisci ad unde ex, facere sunt? Omnis est quae non inventore quod, deserunt ad aliquam id, consequatur sunt aperiam at explicabo sequi earum accusantium exercitationem ipsa voluptates dolorem! Reiciendis vel possimus mollitia, deleniti laborum alias voluptates at beatae in delectus maiores dolorem totam debitis, ex doloremque recusandae atque! Omnis repellendus corrupti delectus ab reiciendis recusandae sed est tempora autem.
+        </div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+</html>
+
+<!-- dont use this property this property only use for old website for modern layout it wiil flexbox     -->

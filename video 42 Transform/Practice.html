@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            margin: 30px auto;
+            max-width: 1000px;
+            width: 90vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .box {
+            width: 20%;
+            margin: 20px 20px;
+            background: red;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            line-height: 130px;
+        }
+
+        .blue {
+            background-color: rgba(23, 143, 176, 0.5);
+        }
+
+        .scaleX {
+            transform: scaleX(1);
+            transition: transform 0.5s ease;
+        }
+
+        /* Meaning is trans form 1 mathi transform 2 thy ja pacho jay tyare dhime thay */
+        .box:hover .scaleX {
+            transform: scaleX(2);
+        }
+
+        .scaleY {
+            transform: scaleY(1);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .scaleY {
+            transform: scaleY(2);
+        }
+
+        .scale {
+            transform: scale(1, 1);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .scale {
+            transform: scale(1.5, 1.5);
+        }
+
+
+        .rotate {
+            transform: rotate(0);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .rotate {
+            transform: rotate(270deg);
+        }
+
+        .rotateX {
+            transform: rotateX(0);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .rotateX {
+            transform: rotateX(50deg);
+        }
+
+        .rotateY {
+            transform: rotateY(0);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .rotateY {
+            transform: rotateY(50deg);
+        }
+
+        .translateX {
+            transform: translateX(0px);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .translateX {
+            transform: translateX(70px);
+        }
+
+        .translateY {
+            transform: translateY(0px);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .translateY {
+            transform: translateY(70px);
+        }
+
+        .translate {
+            transform: translate(1, 1);
+            transition: transform 0.5s ease;
+        }
+
+        .box:hover .translate {
+            transform: translate(2em, 2em);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="blue scaleX">
+                ScaleX
+            </div>
+        </div>
+        <div class="box">
+            <div class="scaleY blue">
+                ScaleY
+            </div>
+        </div>
+        <div class="box">
+            <div class="scale blue">
+                Scale
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="rotate blue">
+                Rotate
+            </div>
+        </div> 
+        <div class="box">
+            <div class="rotateX blue">
+                RotateX
+            </div>
+        </div>
+        <div class="box">
+            <div class="rotateY blue">
+                RotateY
+            </div>
+        </div>
+        <div class="box">
+            <div class="translateX blue">
+                TranslateX
+            </div>
+        </div>
+        <div class="box">
+            <div class="translateY blue">
+                TranslateY
+            </div>
+        </div>
+        <div class="box">
+            <div class="translate blue">
+                Translate
+            </div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

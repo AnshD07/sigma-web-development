@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nav bar using Global varible</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* so this is Global varible for nav bar that harry say to add in navigation bar */
+        :root {
+            --color: rgb(26, 26, 107);
+            --baccolor: rgb(255, 255, 236);
+
+            --firstbaccolor: orange;
+            --secbaccolor: rgb(42, 156, 194);
+            --thirdbaccolor: rgb(197, 85, 141);
+            --fourthbaccolor: rgb(232, 50, 0);
+            --fifthbaccolor: rgb(149, 60, 165);
+            --sixbaccolor: rgb(52, 203, 107);
+            --sevenbaccolor: rgb(20, 203, 191);
+            --eightbaccolor: rgb(202, 214, 25);
+            --ninebaccolor: rgb(175, 17, 156);
+        }
+
+
+
+        .mainnav {
+            display: flex; 
+            position: sticky    ;
+            top: 10px;
+        }
+
+        .nav {
+            border: 2px solid black;
+
+            width: 89%;
+
+            border: none;
+
+            background-color: rgb(187, 246, 177);
+        }
+
+        ul li:first-child {
+            background-color: var(--firstbaccolor);
+        }
+
+        ul li:nth-child(2) {
+            background-color: var(--secbaccolor);
+        }
+        ul li:nth-child(3) {
+            background-color: var(--thirdbaccolor);
+        }
+        ul li:nth-child(4) {
+            background-color: var(--fourthbaccolor);
+        }
+        ul li:nth-child(5) {
+            background-color: var(--fifthbaccolor);
+        }
+        ul li:nth-child(6) {
+            background-color: var(--sixbaccolor);
+        }
+        ul li:nth-child(7) {
+            background-color: var(--sevenbaccolor);
+        }
+        ul li:nth-child(8) {
+            background-color: var(--eightbaccolor);
+        }
+        ul li:nth-child(9) {
+            background-color: var(--ninebaccolor);
+        }
+
+
+        ul {
+            display: flex;
+            justify-content: right;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 20px;
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 15px;
+            margin: 5px;
+            background-color: var(--baccolor);
+            color: var(--color);
+            font-weight: 2000;
+        }
+
+        img {
+            width: 11%;
+            height: auto;
+
+        }
+
+        .box {
+            width: 20px;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Exercise 4 say that design a nav bar that wiil on css varible for change color or contrast who want to change it on come and make change -->
+
+    <div class="mainnav">
+        <img src="https://tinyurl.com/y6xbkpkx" alt="">
+
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Study</li>
+                <li>Faculty</li>
+                <li>Student</li>
+                <li>Contanct</li>
+                <li>About</li>
+                <li>Computer Engineering</li>
+                <li>Mechanical Engineering</li>
+                <li>Electrical Engineering</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+   
+</body>
+
+</html>

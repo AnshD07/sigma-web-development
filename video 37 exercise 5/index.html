@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        .head  {
+            text-align: center;
+            background-color: rgb(150, 232, 156);
+        }
+
+        .nav ul {
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: 15px;
+            color: black;
+        }
+
+        .nav {
+            background-color: rgb(104, 226, 226);
+            position: sticky;
+            top: 2px;
+            z-index: 1;
+            
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .boxes {
+            margin: 10px;
+            /*top right bottom left*/
+            border: 2px solid black;
+            width: 1500px;
+            height: 900px;
+            display: flex;
+            background-color: rgb(115, 220, 131);
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: rgb(48, 48, 95);
+            width: 35%;
+            height: 800px;
+            margin: 30px;
+        }
+
+        .box1 {
+            position: relative;
+            top: 20px;
+            left: 90px;
+        }
+
+        .box2 {
+            position: relative;
+            top: 20px;
+            left: 205px;
+        }
+
+        .rec{
+            width: 99%;
+            background-color: rgb(69, 69, 236);
+            margin: 10px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 10%;
+            color: rgb(45, 225, 21);
+        }
+
+        .rec h1{
+            margin-left: 50px;
+        }
+
+        .rec ul{
+            margin-left: 170px;
+            list-style: none;
+            font-size: 18px;
+        }
+
+        .footer{
+            width: 100%;
+            height: 80px;
+            border: 2px solid black;
+            background-color: rgb(209, 122, 122);
+        }
+
+        .footer h1{
+            text-align: center;
+            position: relative;
+            top: 19px;
+        }
+
+        .footer .circle{
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            border-radius: 100%;
+
+            position: fixed;
+            top: 570px; 
+            right: 15px;
+        }
+
+        .footer .circle img{
+            border-radius: 100%;
+        }
+    </style>
+
+</head>
+
+<body> 
+    
+
+    <h1 class="head">(❁´◡`❁) &nbsp;&nbsp;&nbsp;&nbsp; SIGMA BATCH OP &nbsp;&nbsp;&nbsp;&nbsp; (●'◡'●) SCROLL NOW </h1>
+
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Resources</a></li>
+            <li><a href="/">Library</a></li>
+            <li><a href="/">About US</a></li>
+            <li><a href="/">Contact US</a></li>
+        </ul>
+    </div>
+
+    <div class="boxes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+
+    <div class="rec">
+        <h1>More Abour Sigma Batch</h1>
+        <ul>
+            <li> &nbsp; Poilet : Harry Bhai</li>
+            <li> &nbsp;&nbsp; Total Seat : 78</li>
+            <li> &nbsp;&nbsp;&nbsp; FROM : Zero Web development</li>
+            <li> &nbsp;&nbsp;&nbsp;&nbsp; TO : Hero Web development</li>
+            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Remaining Seat : 0</li>
+            <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bhupendra JOgi is Friend of Harry bhai</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <h1>Please give Shout OUT ==> ANSH</h1>
+        <div class="circle">
+            <img src="https://tinyurl.com/3uns8wsh" alt="" width="100px" height="100px">
+        </div>
+    </div>
+</body>
+
+</html>

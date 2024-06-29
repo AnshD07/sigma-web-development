@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- write a program to calculate factorial of number enter by the user -->
+</head>
+
+<body>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        let num = prompt("Enter a Number For Factorial: ");
+        let Number = [];
+        for (let i = 1; i <= num; i++) {
+            Number.push(i)
+        }
+        // let i = 1
+        // do {
+        //     Number.push(i)
+        //     i++
+        // } while (i <= num);
+
+        let factorial = (a, b) => {
+            return a * b;
+        }
+
+        console.log(Number.reduce(factorial))
+        console.log(Number)
+    </script>
+</body>
+
+</html>

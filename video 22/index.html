@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+
+        .box{
+            box-sizing: border-box;  /*aato khbar chhe*/
+            
+            background-color: brown;
+            color: white;
+            border: 2px solid black;
+            
+            margin:  auto;  /*With this it align to center*/
+            /*And also remeber that it only center if element is block element if it was inline element than nothing happen*/
+
+
+            
+            width: 80vw; /* [ vw -->  viewport width ] it change with display resolution*/
+
+            /*here 80 means 80percent viewport of width if i need full screen view port than i write 100 vw */
+
+            height: 10vh;
+        }
+
+        .container{
+            box-sizing: border-box;
+
+            background-color: aqua;
+            color: black;
+            border: 1px solid black;
+
+            margin:25px auto;
+            /*
+            When three values are specified, the first margin applies to the top, the second to the right and left, the third to the bottom. When four values are specified, the margins apply to the top, right, bottom, and left in that order 
+            */
+
+            width: 80vw;
+
+            /* height: 50vh; i need to remeber here [vh--> viewport height] */
+
+            min-height: 80vh; /*contant hoy ke no hoy minimam height 80vh rakh contant vdhe to automatic flexible thy jay*/
+
+            /*it meaing that it take 50 percent  of view height*/
+
+            font-size: 16px;
+        }
+
+        .container  p{
+                font-size: 2rem;  /*here 2 em means ana container ni je font size hti aeni 1.5 guna or 2 guna*/
+
+                /*aetle inherit thy jay chhe aem*/
+        }
+
+        /*if i set font size of root element i want to set size of other element in oppose of root i use rem for it*/
+        /*means root ka 2 guna etc*/
+        
+        html{
+            font-size: 12px;
+        }
+
+        .mycontainer{
+            background-color: blue;
+            color: white;
+            width: 100vmin; /*here in laptop vmin become height because in pc display height is minimam and in mobile phone display width is minimam so vmin become width*/
+
+            margin: 25px auto;
+            border: 2px solid black;
+        }
+
+        .parent{
+            background-color: blueviolet;
+            color: aqua;
+            border: 5px solid black;
+            font-size: 20px;
+        }
+
+        .parent > div{
+            width: 50%;
+            border: 3px solid  white;
+        }
+                                                     /*so this is a 50percent width of parent tag okay you can see the output */
+        .parent > div > p{
+            width: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Sizing Units</h1>
+    <div class="box">This is Box, and this is responsive website</div>
+
+    <div class="container">
+        <p> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nemo vero nisi esse harum maxime, dolor vitae accusamus necessitatibus ratione nostrum unde est natus molestias enim eaque omnis quae voluptatem quas assumenda recusandae eligendi similique dolorem nulla! Nobis deleniti autem, reprehenderit minus atque numquam ex saepe a, placeat, animi aliquid officia vero impedit maiores. Temporibus aut blanditiis fugit ratione dolor ducimus. Perspiciatis sapiente voluptatem quod sint distinctio.
+        </p>
+
+        this is for refrence okay
+    </div>
+
+    <div class="mycontainer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus rem consectetur quas numquam aspernatur ex vitae. Vel ipsa ab odio adipisci unde et magni praesentium sit laborum aliquid explicabo ex id, dolorum vero suscipit illo dolore non quod sint cum ad omnis pariatur! Minima ut asperiores aut quidem error magni obcaecati amet quae tempora aspernatur molestias, rerum accusantium quo aliquid sint doloremque inventore praesentium earum ipsum iste repellat reprehenderit. Cum deserunt a excepturi quae re 
+    </div>
+
+    <div class="parent">
+        <div>
+            
+            This is width parent ni 50% width <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam in optio quae accusantium veritatis ratione quia consequuntu 
+            <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti qui nihil ipsa pariatur consequuntur perferendis tempora aut odit vel voluptatem, luptatibus nobis commodi dolor? Nam. 
+            </p>
+        </div>
+    </div>
+    </body>
+    </html>

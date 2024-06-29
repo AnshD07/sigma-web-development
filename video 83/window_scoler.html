@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Scroller</title>
+    <style>
+        /* Add some styling for the button (optional) */
+        button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #0074D9;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smooth Scroll to Top</h1>
+     
+    <!-- Add a button to trigger the smooth scroll -->
+    <button onclick="smoothScrollToTop()">Scroll To Top</button>
+
+    <!-- Add more content to make the page scrollable -->
+    <div style="height: 20000px;">
+    <p>Scroll down to see the Button...</p>
+    </div>
+
+    <script>
+        function smoothScrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth' });
+        }
+    </script>
+    
+</body>
+</html>

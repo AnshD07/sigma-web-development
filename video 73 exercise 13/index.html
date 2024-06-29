@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercise 13</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         color: white;
+      }
+
+      .container {
+         background-color: #0C0E0F;
+         border-radius: 15px;
+         display: flex;
+         gap: 30px;
+      }
+
+      .div1 {
+         position: relative;
+      }
+
+      .div1 .time {
+         padding: 5px;
+         opacity: 0.77;
+         color: white;
+         background-color: #0C0E0F;
+         position: absolute;
+         bottom: 10px;
+         right: 10px;
+      }
+
+      .div1 img {
+         border-radius: 12px;
+      }
+
+      .div2 {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+
+      .info {
+         display: flex;
+         gap: 4px;
+         position: inherit;
+         color: #f1f1f100;
+      }
+
+      .info span {
+         position: relative;
+         top: 7px;
+         display: block;
+         width: 5px;
+         height: 5px;
+         background-color: white;
+         border-radius: 100%;
+      }
+   </style>
+</head>
+
+<body>
+
+</body>
+<script>
+   let viewCalculater = function (view) {
+      if (view >= 100000000) {
+         return `${Math.round(view / 100000000)}B`
+      }
+      else if (view >= 1000000) {
+         return `${Math.round(view / 100000)}M`
+      }
+      else if (view >= 1000) {
+         return `${Math.round(view / 1000)}K`
+      }
+      else if (view < 1000) {
+         return view
+      }
+   }
+
+   function createCard(titalname, cName, view, monthsOld, duration, thumbnail) {
+
+      let div = document.createElement("div")
+      view = viewCalculater(view)
+
+      div.innerHTML = `
+        <div class="container">
+        <div class="div1">
+            <img
+                src="${thumbnail}"
+                alt="">
+
+            <div class="time">
+                ${duration}
+            </div>
+        </div>
+        <div class="div2">
+            <h1 class="header">
+                ${titalname}
+            </h1>
+            <div class="info">
+                <div class="cname">${cName}</div>
+                <span></span>
+                <div class="view">${view} views</div>
+                <span></span>
+                <div class="old">${monthsOld} months ago</div>
+            </div>
+        </div>
+    </div>
+    `
+
+      document.body.appendChild(div)
+   }
+
+
+   createCard("Installing VS Code &amp; How Websites Work | Sigma Web Development Course - Tutorial #1", "codewithharry", 1000000000, 4, "20:00", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
+   // you can make so many card from this function ok kishan chuhan
+
+</script>
+<!-- <script src="script.js"></script> -->
+</html>
